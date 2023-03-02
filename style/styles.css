@@ -1,0 +1,29 @@
+.h1{
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--font)
+}
+
+.todo-btn{
+    border: none;
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    color: var(--primary-500);
+    border: solid 1px var(--primary-500);
+    background-color: var(--primary-100);
+    transition: all ease-in 200ms;
+    
+}
+
+.todo-btn:hover{
+    color: var(--font-light);
+    border: solid 1px var(--primary-500);
+    background-color: var(--primary-500);
+    
+}
+
+.todo-input{
+    border: none;
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+}
