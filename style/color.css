@@ -1,7 +1,12 @@
 :root{
     --bg: #fafafa;
     --font: #222222;
+    --border: #eeeeee;
     --font-light: #fff;
+    --font-light-gray: #747474;
+    --white: #fff;
+    --danger:#ec5837;
     --primary-500: #537FE7;
+    --primary-300: #6793fa;
     --primary-100: #ecf1ff;
 }

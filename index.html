@@ -5,21 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style/import.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
     <title>To-Do</title>
   </head>
   <body>
     <div class="app-container">
-      <header class="h1">Todo daily list</header>
-
+      <header class="h1">Todo list</header>
+      <p class="p">Simple track your daily tasks</p>
       <form class="todo-form">
-        <input type="text" class="todo-input" />
+        <input type="text" class="todo-input" required/>
         <button class="todo-btn">
           Add new
           <i class="bi bi-plus-lg"></i>
         </button>
       </form>
     </div>
+    
+    <ul class="todos">
+     
+    </ul>
 
-    <div class="todos"></div>
+    <!-- <div class="toast-alert">
+    </div> -->
+
+    <script src="./app.js"></script>
+    <script src="moment.js"></script>
+    <script>
+    moment().format();
+    </script>
   </body>
 </html>
