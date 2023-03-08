@@ -9,7 +9,7 @@
   margin-top: 1rem;
 }
 
-/* Todo items */
+/* Todo items */ 
 
 .todos {
   display: flex;
@@ -17,16 +17,20 @@
   justify-content: center;
   list-style: none;
   align-items: center;
-  margin: 1rem 1.5rem;
+  margin: 0 1.5rem;
 }
 
 .todo {
   width: 50%;
-  margin-top: 1rem;
+  margin-bottom: 1rem;
   border: solid 1px var(--border);
   background-color: var(--white);
   padding: 1.5rem;
   border-radius: 12px;
+}
+
+.todo.completed{
+  border-left: 4px solid #19da16;
 }
 
 .todo-item {
@@ -61,6 +65,10 @@
   background-color: #19da16;
 }
 
+.completed.buttons.complete-btn{
+  background-color: #19da16;
+}
+
 .delete-btn {
   font-size: 16px;
   padding: 0.5rem 1rem;
@@ -71,4 +79,59 @@
   background-color: var(--danger);
   transition: ease-in all 300ms;
   cursor: pointer;
+}
+
+i{
+  pointer-events: none;
+}
+
+
+
+
+/* Mobile version */
+
+@media screen and (max-width: 1250px) {
+  .todo {
+    width: 100%;
+    margin-bottom: 1rem;
+    border: solid 1px var(--border);
+    background-color: var(--white);
+    padding: 1.5rem;
+    border-radius: 12px;
+  }
+
+  .buttons{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .complete-btn {
+    width: 100%;
+   margin-bottom: 8px;
+  }
+
+  .delete-btn {
+    width: 100%;
+   margin-bottom: 8px;
+  }
+
+  .bi{
+    pointer-events: none;
+  }
+
+
+}
+
+@media screen and (max-width: 500px){
+  .todo-form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .todo-input{
+    margin-bottom: 8px;
+    width: 100%!important;
+  }
+
 }
