@@ -4,12 +4,11 @@ const todoBtn = document.querySelector(".todo-btn");
 const todos = document.querySelector(".todos");
 const toast = document.querySelector(".toast-alert");
 
-
+const emptyState = document.querySelector(".empty-state");
 
 //Event listener
 todoBtn.addEventListener("click", addTodo);
 todos.addEventListener("click", deleteCheck);
-
 
 function addTodo(event) {
   event.preventDefault();
@@ -49,11 +48,11 @@ function addTodo(event) {
   
     todos.appendChild(todoDiv);
     todoInput.value = "";
-
     
+    emptyState.remove();
+
   }
 }
-
 
 function deleteCheck(e){
   const item = e.target;
@@ -76,3 +75,4 @@ function deleteCheck(e){
   }
   
 }
+
